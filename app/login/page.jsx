@@ -27,7 +27,7 @@ function page() {
         <form className='flex flex-col justify-center items-center gap-5 text-black '>
             <input className='bg-gray-200 rounded-lg py-1 px-4'  type="email" placeholder="Email" value={user.email} onChange={(e)=>setUser({...user,email:e.target.value})}></input>
             <input className='bg-gray-200 rounded-lg py-1 px-4'  type="password" placeholder="Password" value={user.password} onChange={(e)=>setUser({...user,password:e.target.value})}></input>
-            <button className='bg-blue-500 text-white rounded-lg py-1 px-4' onClick={onClickHandler}>Signup</button>
+            <button className='bg-blue-500 text-white rounded-lg py-1 px-4' onClick={onClickHandler}>Login</button>
         </form> 
         <Link href="/signup">Don't have an account? sign up</Link>
     </div>
